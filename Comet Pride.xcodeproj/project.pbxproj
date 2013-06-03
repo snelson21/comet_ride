@@ -281,8 +281,11 @@
 		A30513D9175C32D000E7341B /* b2WheelJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A30513D8175C32D000E7341B /* b2WheelJoint.cpp */; };
 		A30513DD175C32D000E7341B /* b2Rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A30513DC175C32D000E7341B /* b2Rope.cpp */; };
 		A30513E4175C32D000E7341B /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A30513E3175C32D000E7341B /* AppDelegate.cpp */; };
-		A30513E7175C32D000E7341B /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A30513E6175C32D000E7341B /* HelloWorldScene.cpp */; };
 		A30513E9175C32D000E7341B /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = A30513E8175C32D000E7341B /* blocks.png */; };
+		A30513F1175C337900E7341B /* SpaceScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A30513EF175C337900E7341B /* SpaceScene.cpp */; };
+		A30513F4175C34B900E7341B /* PhysicsSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A30513F2175C34B900E7341B /* PhysicsSprite.cpp */; };
+		A30513F7175C376600E7341B /* BackgroundObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A30513F5175C376500E7341B /* BackgroundObject.cpp */; };
+		A30513F9175C430B00E7341B /* stars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A30513F8175C430B00E7341B /* stars.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -879,9 +882,14 @@
 		A30513E0175C32D000E7341B /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		A30513E2175C32D000E7341B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		A30513E3175C32D000E7341B /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
-		A30513E5175C32D000E7341B /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		A30513E6175C32D000E7341B /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		A30513E8175C32D000E7341B /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
+		A30513EF175C337900E7341B /* SpaceScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpaceScene.cpp; sourceTree = "<group>"; };
+		A30513F0175C337900E7341B /* SpaceScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScene.h; sourceTree = "<group>"; };
+		A30513F2175C34B900E7341B /* PhysicsSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhysicsSprite.cpp; sourceTree = "<group>"; };
+		A30513F3175C34B900E7341B /* PhysicsSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysicsSprite.h; sourceTree = "<group>"; };
+		A30513F5175C376500E7341B /* BackgroundObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BackgroundObject.cpp; sourceTree = "<group>"; };
+		A30513F6175C376500E7341B /* BackgroundObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundObject.h; sourceTree = "<group>"; };
+		A30513F8175C430B00E7341B /* stars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stars.jpg; path = Resources/stars.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -952,6 +960,7 @@
 		A305104E175C32C900E7341B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A30513F8175C430B00E7341B /* stars.jpg */,
 				A305104F175C32C900E7341B /* CloseNormal.png */,
 				A3051051175C32C900E7341B /* CloseSelected.png */,
 				A3051053175C32C900E7341B /* Default.png */,
@@ -2077,8 +2086,12 @@
 			children = (
 				A30513E2175C32D000E7341B /* AppDelegate.h */,
 				A30513E3175C32D000E7341B /* AppDelegate.cpp */,
-				A30513E5175C32D000E7341B /* HelloWorldScene.h */,
-				A30513E6175C32D000E7341B /* HelloWorldScene.cpp */,
+				A30513EF175C337900E7341B /* SpaceScene.cpp */,
+				A30513F0175C337900E7341B /* SpaceScene.h */,
+				A30513F2175C34B900E7341B /* PhysicsSprite.cpp */,
+				A30513F3175C34B900E7341B /* PhysicsSprite.h */,
+				A30513F5175C376500E7341B /* BackgroundObject.cpp */,
+				A30513F6175C376500E7341B /* BackgroundObject.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -2147,6 +2160,7 @@
 				A3051100175C32CB00E7341B /* ChangeLog in Resources */,
 				A305126A175C32CE00E7341B /* project.pbxproj in Resources */,
 				A30513E9175C32D000E7341B /* blocks.png in Resources */,
+				A30513F9175C430B00E7341B /* stars.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2408,7 +2422,9 @@
 				A30513D9175C32D000E7341B /* b2WheelJoint.cpp in Sources */,
 				A30513DD175C32D000E7341B /* b2Rope.cpp in Sources */,
 				A30513E4175C32D000E7341B /* AppDelegate.cpp in Sources */,
-				A30513E7175C32D000E7341B /* HelloWorldScene.cpp in Sources */,
+				A30513F1175C337900E7341B /* SpaceScene.cpp in Sources */,
+				A30513F4175C34B900E7341B /* PhysicsSprite.cpp in Sources */,
+				A30513F7175C376600E7341B /* BackgroundObject.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
